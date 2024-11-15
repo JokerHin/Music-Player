@@ -35,12 +35,22 @@ nav .circle{
     background: #fff;
     color: #f53192;
     box-shadow: 0 5px 10px rgba(255,26,26, 0.22);
+    cursor: pointer;
 }
 .song-img{
     width: 220px;
     border-radius: 50%;
     border: 8px solid #fff;
     box-shadow: 0 10px 60px rgba(255,26,26, 0.22);
+    animation: loading 4s linear infinite;
+}
+@keyframes loading {
+    0% { 
+      transform: rotate(0); 
+    }
+    100% { 
+      transform: rotate(360deg);
+    }
 }
 .music-player h1{
     font-size: 25px;
